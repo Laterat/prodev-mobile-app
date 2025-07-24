@@ -25,26 +25,28 @@ export default function Index() {
             </View>
 
             <View style={styles.titleContainer}>
-              <Text style={styles.textLarge}>
+              <Text style={styles.titleText}>
                 Find your favorite place here
               </Text>
-              <Text style={styles.textSmall}>The best prices for over 2 </Text>
-              <Text style={styles.textSmall}>million properties worldwide</Text>
+              <Text style={styles.titleSubText}>
+                The best prices for over 2{" "}
+              </Text>
+              <Text style={styles.titleSubText}>
+                million properties worldwide
+              </Text>
             </View>
 
             <View style={{ position: "absolute", bottom: 0, width: "100%" }}>
               <View style={styles.buttonGroup}>
-                <TouchableOpacity style={styles.button}>
-                  <Text style={{ ...styles.textSmall, color: "black" }}>
-                    Join here
-                  </Text>
+                <TouchableOpacity style={styles.buttonPrimary}>
+                  <Text style={styles.buttonPrimaryText}>Join here</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.transparentButton}>
-                  <Text style={styles.textSmall}>Sign In</Text>
+                <TouchableOpacity style={styles.buttonSecondary}>
+                  <Text style={styles.buttonSecondaryText}>Sign In</Text>
                 </TouchableOpacity>
               </View>
-              <View style={{ alignItems: "center", paddingVertical: 20 }}>
+              <View style={styles.buttonGroupSubText}>
                 <Text style={{ color: "white" }}>Continue to home</Text>
               </View>
             </View>
