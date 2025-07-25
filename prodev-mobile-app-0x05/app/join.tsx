@@ -3,12 +3,16 @@ import { styles } from "@/styles/_joinstyle";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 import { HEROLOGOGREEN, GOOGLELOGO, FACEBOOKLOGO } from "@/constants";
+import { useRouter } from "expo-router";
 export default function Index() {
+  const router = useRouter();
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <View style={styles.iconsection}>
-          <Ionicons name="arrow-back" size={25} />
+          <TouchableOpacity onPress={() => router.replace("/")}>
+            <Ionicons name="arrow-back" size={25} />
+          </TouchableOpacity>
           <Image source={HEROLOGOGREEN} />
         </View>
         <Text style={styles.titleText}>Create Your</Text>
@@ -84,8 +88,10 @@ export default function Index() {
         </View>
 
         <View style={styles.signupgroup}>
-          <Text style={styles.signupTitleText}>Don't have an account?</Text>
-          <Text style={styles.signupSubTitleText}>sign in</Text>
+          <Text style={styles.signupTitleText}>D0 have an account? </Text>
+          <TouchableOpacity onPress={() => router.push("/signin")}>
+            <Text style={styles.signupSubTitleText}>sign in</Text>
+          </TouchableOpacity>
         </View>
       </SafeAreaView>
     </SafeAreaProvider>
