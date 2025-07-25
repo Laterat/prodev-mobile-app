@@ -8,7 +8,7 @@ export default function RootLayout() {
         headerShown: false,
       }}
     >
-      <Stack.Screen name="/" />
+      <Stack.Screen name="index" />
       <Stack.Screen name="join" />
       <Stack.Screen name="signin" />
     </Stack>
