@@ -8,19 +8,19 @@ import {
 } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { styles } from "@/styles/_mainstyle";
-
+import { BACKGROUNDIMAGE, HEROLOGO } from "@/constants";
 export default function Index() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
         <ImageBackground
-          source={require("@/assets/images/hero-icon.png")}
+          source={BACKGROUNDIMAGE}
           style={styles.backgroundImageContainer}
           resizeMode="cover"
         >
           <View style={styles.container}>
             <View style={styles.logoContainer}>
-              <Image source={require("@/assets/images/Logo.png")} />
+              <Image source={HEROLOGO} />
             </View>
 
             <View style={styles.titleContainer}>

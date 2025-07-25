@@ -2,14 +2,14 @@ import { Text, TextInput, View, TouchableOpacity, Image } from "react-native";
 import { styles } from "@/styles/_joinstyle";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
-
+import { HEROLOGOGREEN, GOOGLELOGO, FACEBOOKLOGO} from "@/constants";
 export default function Index() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <View style={styles.iconsection}>
           <Ionicons name="arrow-back" size={25} />
-          <Image source={require("@/assets/images/logo-green.png")} />
+          <Image source={HEROLOGOGREEN} />
         </View>
         <Text style={styles.titleText}>Sign in to your</Text>
         <Text style={styles.titleText}>Account</Text>
@@ -54,7 +54,7 @@ export default function Index() {
                 gap: 5,
               }}
             >
-              <Image source={require("@/assets/images/google.png")} />
+              <Image source={GOOGLELOGO} />
               <Text style={styles.secondaryButtonText}>
                 Continue with Google
               </Text>
@@ -69,7 +69,7 @@ export default function Index() {
                 gap: 5,
               }}
             >
-              <Image source={require("@/assets/images/facebook.png")} />
+              <Image source={FACEBOOKLOGO} />
               <Text style={styles.secondaryButtonText}>
                 Continue with Facebook
               </Text>
