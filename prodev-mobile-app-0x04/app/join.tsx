@@ -25,16 +25,17 @@ export default function Index() {
               style={styles.formControl}
             />
           </View>
-          <View style={{ marginTop: 20 }}>
+          <View style={styles.titleTextGroup}>
             <Text style={styles.formLabel}>Password</Text>
-            <View style={styles.forgotPasswordText}>
-              <TextInput style={{ flex: 1 }} />
+            <View style={styles.formPasswordControl}>
+              <TextInput style={styles.passwordControl} />
               <FontAwesome name="eye-slash" size={24} color="#7E7B7B" />
             </View>
-
-            <Text style={styles.formLabel}>Password</Text>
-            <View style={styles.forgotPasswordText}>
-              <TextInput style={{ flex: 1 }} />
+          </View>
+          <View style={{ marginTop: 20 }}>
+            <Text style={styles.formLabel}>Confirm Password</Text>
+            <View style={styles.formPasswordControl}>
+              <TextInput style={styles.passwordControl} />
               <FontAwesome name="eye-slash" size={24} color="#7E7B7B" />
             </View>
           </View>
@@ -84,7 +85,7 @@ export default function Index() {
 
         <View style={styles.signupgroup}>
           <Text style={styles.signupTitleText}>Don't have an account?</Text>
-          <Text style={styles.signupSubTitleText}>Join now</Text>
+          <Text style={styles.signupSubTitleText}>sign in</Text>
         </View>
       </SafeAreaView>
     </SafeAreaProvider>
