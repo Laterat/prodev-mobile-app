@@ -6,13 +6,13 @@ const { width } = Dimensions.get("window");
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f8f8f8",
+    backgroundColor: "#f8f8f8ff",
   },
 
   // Search Bar
   searchGroup: {
     padding: 16,
-    backgroundColor: "#fff",
+    backgroundColor: "#175e3bff",
     borderBottomWidth: 1,
     borderBottomColor: "#ddd",
   },
@@ -55,7 +55,7 @@ export const styles = StyleSheet.create({
   filterContainer: {
     width: 72,
     height: 72,
-    backgroundColor: "#fff",
+    backgroundColor: "#175e3bff",
     borderRadius: 12,
     marginRight: 12,
     alignItems: "center",

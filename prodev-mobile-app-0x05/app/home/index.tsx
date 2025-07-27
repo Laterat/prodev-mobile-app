@@ -33,7 +33,7 @@ const Home = () => {
       <View
         style={{
           height: 72,
-          backgroundColor: "white",
+          backgroundColor: "#175e3bff",
         }}
       >
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
